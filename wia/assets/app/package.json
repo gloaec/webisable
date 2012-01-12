@@ -1,0 +1,11 @@
+{
+  "name": "myApp",
+  "description": "...",
+  "version": "0.0.1",
+  "homepage": "...",
+  "author": "...",
+  "dependencies": {
+    "wia.client": "latest",
+    "wia.server": "latest"
+  }
+}

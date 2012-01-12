@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+
+var optimist = require('optimist'),
+    fd       = require('path'),
+    Cmd      = require('../lib/wia.cmd');
+
+optimist.usage([
+    "usage: wia [options] ",
+    "",
+    "Generates a WiA app using the specified command-line options",
+    "",
+    "options:",
+    "  install           Install dependencies using `npm`",
+    "  app path          Generates a new WiA Application",
+    "  mobile path       Generates a new WiA Mobile Application",
+    "  controller name   Generates a WiA Controller",
+    "  model name        Generates a WiA Model",
+    "  server [-p port]  Start a dynamic development server",
+    "  build             Serialize application to public directory",
+    "  static [-p port]  Start a static production server",
+].join('\n'));
+
+var help = function(){
+  optimist.showHelp();
+  process.exit();
+};
+
+var options = fd.existsSync('./app/app.json') ? 
+              Cmd.readSlug('./app/app.json') : {}
+options.port = optimist.argv.p || optimist.argv.port || options.port
+var cmd    = new Cmd(options);
+var command = optimist.argv._[0];
+
+if (!cmd[command]) help();
+else cmd[command](optimist.argv);
+
+
+
+
+
+

@@ -7,13 +7,13 @@
 	<key>ESProjectWindowState</key>
 	<dict>
 		<key>ContentSize</key>
-		<string>{1106, 705}</string>
+		<string>{1440, 738}</string>
 		<key>ProjectURL</key>
-		<string>file://localhost/Users/ghis182/Sites/webisable/webisable.esproj/</string>
+		<string>file://localhost/Users/ghis182/webisable/webisable.esproj/</string>
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{167, 855}</string>
+		<string>{0, 878}</string>
 	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
 	<false/>
@@ -21,13 +21,17 @@
 	<dict>
 		<key>ExpandedURLs</key>
 		<array>
-			<string>file://localhost/Users/ghis182/Sites/webisable/app</string>
-			<string>file://localhost/Users/ghis182/Sites/webisable/lib/css</string>
-			<string>file://localhost/Users/ghis182/Sites/webisable/lib/js</string>
-			<string>file://localhost/Users/ghis182/Sites/webisable/lib/php</string>
-			<string>file://localhost/Users/ghis182/Sites/webisable/web/css</string>
-			<string>file://localhost/Users/ghis182/Sites/webisable/web/img</string>
-			<string>file://localhost/Users/ghis182/Sites/webisable/web/js</string>
+			<string>file://localhost/Users/ghis182/webisable/test/app/controllers</string>
+			<string>file://localhost/Users/ghis182/webisable/test/app/models</string>
+			<string>file://localhost/Users/ghis182/webisable/test/server/lib</string>
+			<string>file://localhost/Users/ghis182/webisable/test/server/src</string>
+			<string>file://localhost/Users/ghis182/webisable/wia/bin</string>
+			<string>file://localhost/Users/ghis182/webisable/wia/lib</string>
+			<string>file://localhost/Users/ghis182/webisable/wia/src</string>
+			<string>file://localhost/Users/ghis182/webisable/wia.client/lib</string>
+			<string>file://localhost/Users/ghis182/webisable/wia.client/src</string>
+			<string>file://localhost/Users/ghis182/webisable/wia.server/lib</string>
+			<string>file://localhost/Users/ghis182/webisable/wia.server/src</string>
 		</array>
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
@@ -38,49 +42,199 @@
 		<array>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ghis182/Sites/webisable/web/index.html</string>
+				<string>file://localhost/Users/ghis182/webisable/wia/assets/app/package.json</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ghis182/Sites/webisable/app/coffee/models/user.coffee</string>
+				<string>file://localhost/Users/ghis182/webisable/wia.client/Cakefile</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ghis182/Sites/webisable/app/php/user.php</string>
+				<string>file://localhost/Users/ghis182/webisable/wia/Cakefile</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ghis182/Sites/webisable/app/sql/user.sql</string>
+				<string>file://localhost/Users/ghis182/webisable/wia.client/LICENSE</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ghis182/Sites/webisable/app/sql/assets/user.sql</string>
+				<string>file://localhost/Users/ghis182/webisable/wia.client/README.md</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ghis182/Sites/webisable/lib/php/wia.ajax.php</string>
+				<string>file://localhost/Users/ghis182/webisable/wia.client/index.js</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ghis182/Sites/webisable/app/js/models/user.js</string>
+				<string>file://localhost/Users/ghis182/webisable/wia/assets/controller.client.coffee</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ghis182/Sites/webisable/README</string>
+				<string>file://localhost/Users/ghis182/webisable/wia/assets/app/app/app.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/assets/model.server.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/assets/app/server/src/mysql.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/src/wia.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia.server/package.json</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia.server/index.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia.server/src/wia.server.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/assets/app/server/src/server.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia.client/package.json</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia.client/src/spine.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/src/wia.cmd.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/src/wia.log.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/assets/app/app/app.json</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia.client/src/wia.client.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia.server/Cakefile</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/src/wia.jade.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/test/server/src/mysql.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/test/app/app.json</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/bin/wia</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/lib/wia.app.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/test/app/app.styl</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/lib/wia.cmd.js</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/test/app/app.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/test/server/src/server.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/wia/src/wia.server.coffee</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/ghis182/webisable/test/server/lib/server.js</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>

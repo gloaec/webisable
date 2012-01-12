@@ -1,0 +1,17 @@
+{ 
+  "name": "wia.client", 
+  "description": "WiA MVC Framework.", 
+  "version": "0.0.1", 
+  "author": "Ghislain Loaec",
+  "repository": { 
+    "type" : "git", 
+    "url": "http://github.com/ghis182/wia.client.git"
+  }, 
+  "main" : "./index.js",
+  "devDependencies" : {
+    "wia": "~0.0.1"
+  },
+  "dependencies" : {
+    "spine": "latest"
+  }
+}

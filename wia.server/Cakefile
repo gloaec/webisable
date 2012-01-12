@@ -1,0 +1,43 @@
+{print} = require 'sys'
+{spawn} = require 'child_process'
+
+build = (callback) ->
+  coffee = spawn 'coffee', ['-c', '-o', 'lib', 'src']
+  coffee.stderr.on 'data', (data) ->
+    process.stderr.write data.toString()
+  coffee.stdout.on 'data', (data) ->
+    print data.toString()
+  coffee.on 'exit', (code) ->
+    console.log '- Builded'
+    callback?() if code is 0
+
+unpublish = (callback) ->
+  upub = spawn 'npm', ['unpublish', "wia.server@0.0.1"]
+  upub.stderr.on 'data', (data) ->
+    process.stderr.write data.toString()
+  upub.stdout.on 'data', (data) ->
+    print data.toString()
+  upub.on 'exit', (code) ->
+    console.log '- Unpublished'
+    callback?() if code is 0
+
+publish = (callback) ->
+  pub = spawn 'npm', ['publish']
+  pub.stderr.on 'data', (data) ->
+    process.stderr.write data.toString()
+  pub.stdout.on 'data', (data) ->
+    print data.toString()
+  pub.on 'exit', (code) ->
+    console.log '- Published'
+    callback?() if code is 0
+
+task 'build', 'Build lib/ from src/', ->
+  build()
+
+task 'publish', 'Build -> Unpublish current -> Publish', ->
+  build ->
+    unpublish ->
+      publish()
+ 
+task 'unpublish', 'Unpublish current', ->
+  unpublish()

@@ -1,0 +1,16 @@
+vendors = webkit moz o ms
+
+border-radius()
+  border-radius: arguments
+  for vendor in vendors
+    -{vendor}-border-radius: arguments
+    
+box-shadow()
+  box-shadow: arguments
+  for vendor in vendors
+    -{vendor}-box-shadow: arguments
+    
+transform()  
+  -khtml-transform arguments
+  for vendor in vendors
+    -{vendor}-transform: arguments

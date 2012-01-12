@@ -1,0 +1,37 @@
+{
+  "name": "wia",
+  "description": "WebisAble App Generator",
+  "version": "0.0.1",
+  "homepage": "http://www.webisable.com",
+  "author": "Ghislain Loaec <ghis182@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ghis182/webisable.git"
+  },
+  "bin": {
+    "wia": "bin/wia"
+  },
+  "main": "lib/wia",
+  "engine" : [ "node >=0.1.102" ], 
+  "dependencies": { 
+    "ace": "latest",
+    "es5-shimify": "latest",
+    "json2ify": "latest",
+    "jqueryify": "latest",
+    "uglify-js": "~1.0.7",
+    "eco": "1.1.0-rc-1",
+    "fast-detective": "~0.0.1",
+    "optimist": "~0.2.6",
+    "spine": "latest",
+    "express": "~2.4.6",
+    "express-resource": "~0.2.3",
+    "spine": "latest",
+    "sequelize": "latest",
+    "watch": "latest",
+    "coffee-script" : "~1.1.2",
+    "stylus" : "~0.15.1",
+    "jade": "latest",
+    "markdown-js": "latest",
+    "string-color": "latest"
+  }
+}

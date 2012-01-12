@@ -1,0 +1,22 @@
+{  
+  "index_script": "app/app",
+  "index_style": "app/app",
+  "index_view": "app/app",
+  
+  "public": "public",
+  "paths": ["app"],
+  
+  "dependencies": [
+    "wia.client"
+  ],
+  
+  "js": [
+    "public/js/plugin.js"
+  ],
+  
+  "css": [
+    "public/css/plugin.css"
+  ],
+  
+  "port": 3000
+}

@@ -1,0 +1,49 @@
+!!! 5
+html
+  head
+    
+    title My WiA Application
+    
+    meta(name='author', content='Ghislain Loaec')
+    meta(name='copyright', content='© WebisAble')
+    meta(name='description', content='')
+    meta(name='Content-Type', content='text/html; charset=utf-8')
+    
+    block scripts // Auto-Extends app.json => scripts[..] if debugMode enabled
+      script(
+        src='/js/app.js'
+        type='text/javascript')
+      //if lt IE 7
+        script(src='/ie7sucks.js', type='text/javascript')
+      //if lt IE 8
+        script(src='/ie8sucks.js', type='text/javascript')
+      //if lt IE 9
+        script(src='/ie9sucks.js', type='text/javascript')
+      :coffeescript
+        App = require('app');
+        exports.app = new App({el: $("body")}) 
+        
+    block styles // Auto-Extends app.json => styles[..] if debugMode enabled
+      link(
+        href='/css/app.css'
+        type='text/css'
+        rel='stylesheet')
+      :stylus
+        h1
+          font 18px Arial
+        a
+          color #FE008F
+
+  body(scroll='non')
+ 
+    h1 My WiA Application
+    
+    block content
+      #content
+        p
+          :markdown
+            **Wow** Awesome I can _insert_ some [MarkDown](#) code
+    
+    block foot
+      #footer
+        a(href='http://www.websiable.com', title='View login page') WebisAble.com
